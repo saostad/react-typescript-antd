@@ -16,17 +16,17 @@ export const AppLayout: React.FC<any> = () => {
 
   return (
     <StyledLayout>
-      <AppSider collapsed={collapsed} />
+      <Header className="site-layout-background" style={{ padding: 0 }}>
+        {React.createElement(
+          collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+          {
+            className: "trigger",
+            onClick: toggle,
+          }
+        )}
+      </Header>
       <Layout className="site-layout">
-        <Header className="site-layout-background" style={{ padding: 0 }}>
-          {React.createElement(
-            collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-            {
-              className: "trigger",
-              onClick: toggle,
-            }
-          )}
-        </Header>
+        <AppSider collapsed={collapsed} />
         <AppContent />
       </Layout>
     </StyledLayout>
@@ -34,6 +34,7 @@ export const AppLayout: React.FC<any> = () => {
 };
 
 const StyledLayout = styled(Layout)`
+  min-height: 100vh;
   #components-layout-demo-custom-trigger .trigger {
     font-size: 18px;
     line-height: 64px;
