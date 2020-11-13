@@ -1,5 +1,6 @@
 {
-  "cSpell.words": [
-    "browserslist"
-  ]
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#7c1f4a"
+  },
+  "cSpell.words": ["browserslist"]
 }
