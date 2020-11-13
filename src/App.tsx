@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.less";
-import { AppLayout } from "./components/layout/AppLayout";
+import { AppLayout } from "./layout/AppLayout";
 
 const App = () => (
   <div className="App">

@@ -6,7 +6,7 @@ const { Footer } = Layout;
 export const AppFooter: React.FC = () => {
   return (
     <Footer style={{ textAlign: "center" }}>
-      © {process.env.YEAR} The Austin Company. All Rights Reserved.
+      © {process.env.YEAR} Company Name. All Rights Reserved.
       <h6>
         <span>
           Design and Development:

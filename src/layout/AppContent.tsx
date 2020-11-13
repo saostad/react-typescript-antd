@@ -6,11 +6,11 @@ const { Content } = Layout;
 export const AppContent = () => {
   return (
     <Content
-      className="site-layout-background"
       style={{
-        margin: "24px 16px",
+        margin: "16px 16px 0 16px",
         padding: 24,
         minHeight: 280,
+        background: "rgb(255, 255, 255)",
       }}
     >
       Content
