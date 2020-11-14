@@ -3,10 +3,21 @@ TODO:
 - [x] Typescript
 - [x] Ant Design
 - [ ] Layout
-  - [ ] Header (Company Logo & Description)
-  - [ ] Login / Logout Buttons
+  - [ ] Header
+    - [ ] Company Logo
+    - [ ] Description
+    - [ ] Login / Logout Buttons
   - [x] Footer (Copyright & Year & Version number)
-- [x] Router (integration with side menu)
+  - [ ] Breadcrumb
+  - [ ] Side Menu
+  - [ ] Responsive Layout
+- [ ] Router
+  - [x] Basic Setup
+  - [x] 404
+  - [ ] Integration with side menu
+  - [ ] Integration with Breadcrumb
 - [ ] Error Boundaries
 - [ ] Settings Page
+  - [ ] Layout Settings Tab
+- [ ] favicon
 - [ ] [Azure AD integration](https://www.npmjs.com/package/@azure/msal-react)

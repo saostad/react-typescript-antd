@@ -8,6 +8,7 @@ import {
 import { AppLayout } from "../layout/AppLayout";
 import { Home } from "../pages/Home";
 import { Settings } from "../pages/Settings";
+import { NotFound } from "./NotFound";
 
 type Routes = Array<{
   path: string;
@@ -41,6 +42,9 @@ export const AppRouter: React.FC = () => {
               />
             );
           })}
+          <Route path="*">
+            <NotFound />
+          </Route>
         </Switch>
       </AppLayout>
     </Router>
