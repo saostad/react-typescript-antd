@@ -5,7 +5,9 @@ import { AppContent } from "./AppContent";
 import { AppFooter } from "./AppFooter";
 import { AppHeader } from "./AppHeader";
 
-export const AppLayout: React.FC<any> = () => {
+type Props = {};
+
+export const AppLayout: React.FC<Props> = () => {
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <AppHeader />

@@ -9,7 +9,6 @@ export const AppContent = () => {
       style={{
         margin: "16px 16px 0 16px",
         padding: 24,
-        minHeight: 280,
         background: "rgb(255, 255, 255)",
       }}
     >
