@@ -16,7 +16,7 @@ TODO:
   - [x] 404
   - [ ] Integration with side menu
   - [ ] Integration with Breadcrumb
-- [ ] Error Boundaries
+- [x] Error Boundaries
 - [ ] Settings Page
   - [ ] Layout Settings Tab
 - [ ] favicon

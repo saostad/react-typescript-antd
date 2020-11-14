@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.less";
+import { ErrorBoundaries } from "./layout/ErrorBoundaries";
 import { AppRouter } from "./router/AppRouter";
 
 const App = () => (
-  <div className="App">
+  <ErrorBoundaries>
     <AppRouter />
-  </div>
+  </ErrorBoundaries>
 );
 
 export default App;

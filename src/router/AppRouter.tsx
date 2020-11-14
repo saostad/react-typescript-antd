@@ -6,9 +6,9 @@ import {
   RouteComponentProps,
 } from "react-router-dom";
 import { AppLayout } from "../layout/AppLayout";
+import { NotFound } from "../layout/NotFound";
 import { Home } from "../pages/Home";
 import { Settings } from "../pages/Settings";
-import { NotFound } from "./NotFound";
 
 type Routes = Array<{
   path: string;
