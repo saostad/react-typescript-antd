@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.less";
-import { AppLayout } from "./layout/AppLayout";
+import { AppRouter } from "./router/AppRouter";
 
 const App = () => (
   <div className="App">
-    <AppLayout />
+    <AppRouter />
   </div>
 );
 

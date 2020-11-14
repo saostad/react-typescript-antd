@@ -2,5 +2,8 @@
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#7c1f4a"
   },
-  "cSpell.words": ["browserslist"]
+  "cSpell.words": [
+    "browserslist"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

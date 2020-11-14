@@ -3,7 +3,7 @@ import React from "react";
 
 const { Content } = Layout;
 
-export const AppContent = () => {
+export const AppContent: React.FC = ({ children }) => {
   return (
     <Content
       style={{
@@ -12,7 +12,7 @@ export const AppContent = () => {
         background: "rgb(255, 255, 255)",
       }}
     >
-      Content
+      {children}
     </Content>
   );
 };

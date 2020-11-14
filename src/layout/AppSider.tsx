@@ -1,6 +1,7 @@
 import React from "react";
 import { Layout, Menu } from "antd";
-import { UserOutlined } from "@ant-design/icons";
+import { UserOutlined, SettingFilled } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const { Sider } = Layout;
 
@@ -16,7 +17,10 @@ export const AppSider: React.FC<Props> = () => {
     >
       <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
         <Menu.Item key="1" icon={<UserOutlined />}>
-          nav 1
+          <Link to="/">Home</Link>
+        </Menu.Item>
+        <Menu.Item key="2" icon={<SettingFilled />}>
+          <Link to="/settings">Settings</Link>
         </Menu.Item>
       </Menu>
     </Sider>

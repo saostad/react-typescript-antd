@@ -7,13 +7,13 @@ import { AppHeader } from "./AppHeader";
 
 type Props = {};
 
-export const AppLayout: React.FC<Props> = () => {
+export const AppLayout: React.FC<Props> = ({ children }) => {
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <AppHeader />
       <Layout>
         <AppSider />
-        <AppContent />
+        <AppContent>{children}</AppContent>
       </Layout>
       <AppFooter />
     </Layout>
