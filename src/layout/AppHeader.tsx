@@ -5,5 +5,5 @@ import { Layout } from "antd";
 const { Header } = Layout;
 
 export const AppHeader: React.FC = () => {
-  return <Header>HEADER Here!</Header>;
+  return <Header style={{ color: "white" }}>HEADER Here!</Header>;
 };
