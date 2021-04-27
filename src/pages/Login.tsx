@@ -27,7 +27,8 @@ export const Login: React.FC = () => {
   }, [history, userContext.user]);
 
   const onFinish = (values: FormValues) => {
-    console.log(`File: Login.tsx,`, `Line: 31 => `, values);
+    // TODO: write user validation code
+    userContext.userSet(values.username);
   };
 
   const onFinishFailed = (errorInfo: any) => {

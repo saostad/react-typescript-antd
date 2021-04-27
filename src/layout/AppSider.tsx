@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Layout, Menu } from "antd";
-import { UserOutlined, SettingFilled } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import { routes } from "../router/AppRouter";
+import { getActiveRoute } from "../helpers/utils";
+import { UserContext } from "../state/UserContext";
 
 const { Sider } = Layout;
 
 type Props = {};
 
 export const AppSider: React.FC<Props> = () => {
+  const userContext = useContext(UserContext);
+  const activeRoutes = getActiveRoute({ routes, userContext });
+
   return (
     <Sider
       collapsible={true}
@@ -16,12 +21,13 @@ export const AppSider: React.FC<Props> = () => {
       theme="dark"
     >
       <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
-        <Menu.Item key="1" icon={<UserOutlined />}>
-          <Link to="/">Home</Link>
-        </Menu.Item>
-        <Menu.Item key="2" icon={<SettingFilled />}>
-          <Link to="/settings">Settings</Link>
-        </Menu.Item>
+        {activeRoutes.map((el) => {
+          return (
+            <Menu.Item key={el.path} icon={el.siderIcon}>
+              <Link to={el.path}>{el.siderTitle}</Link>
+            </Menu.Item>
+          );
+        })}
       </Menu>
     </Sider>
   );
