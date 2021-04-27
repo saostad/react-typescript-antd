@@ -5,7 +5,7 @@ export const LayoutContext = React.createContext({
   menuThemeSet: (value: string) => {},
 });
 
-export const LoadingContextProvider: React.FC = ({ children }) => {
+export const LayoutContextProvider: React.FC = ({ children }) => {
   const [menuTheme, menuThemeSet] = useState("dark");
 
   const state = {

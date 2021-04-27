@@ -6,10 +6,12 @@ TODO:
   - [ ] Header
     - [ ] Company Logo
     - [ ] Description
-    - [ ] Login / Logout Buttons
+    - [x] Login Button
+    - [x] Logout Button
   - [x] Footer (Copyright & Year & Version number)
   - [ ] Breadcrumb
   - [ ] Side Menu
+    - [ ] integration with protected routes
   - [ ] Responsive Layout
 - [ ] Router
   - [x] Basic Setup

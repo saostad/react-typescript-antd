@@ -11,7 +11,7 @@ export const AppSider: React.FC<Props> = () => {
   return (
     <Sider
       collapsible={true}
-      defaultCollapsed={false}
+      defaultCollapsed={true}
       collapsedWidth={0}
       theme="dark"
     >
