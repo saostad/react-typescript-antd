@@ -17,6 +17,8 @@ TODO:
   - [x] Basic Setup
   - [x] 404
   - [ ] Integration with side menu
+    - [x] show active routes
+    - [ ] highlight selected/active route
   - [ ] Integration with Breadcrumb
 - [x] Error Boundaries
 - [ ] Settings Page
