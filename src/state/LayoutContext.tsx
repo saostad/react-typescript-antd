@@ -1,16 +1,28 @@
+import { MenuTheme } from "antd";
 import React, { useState } from "react";
 
+const defaultLayoutSetting = {
+  menuTheme: "dark" as MenuTheme,
+  sider: {
+    isSideBarEnabled: true,
+    isSiderDefaultOpen: true,
+  },
+};
+
+/** placeholder for UI related settings */
 export const LayoutContext = React.createContext({
-  menuTheme: "dark",
-  menuThemeSet: (value: string) => {},
+  layoutSetting: defaultLayoutSetting,
+  layoutSettingSet: (value: typeof defaultLayoutSetting) => {},
 });
 
+/** placeholder for UI related settings */
 export const LayoutContextProvider: React.FC = ({ children }) => {
-  const [menuTheme, menuThemeSet] = useState("dark");
+  const [layoutSetting, layoutSettingSet] =
+    useState<typeof defaultLayoutSetting>(defaultLayoutSetting);
 
   const state = {
-    menuTheme,
-    menuThemeSet,
+    layoutSetting,
+    layoutSettingSet,
   };
 
   return (

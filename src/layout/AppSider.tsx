@@ -4,12 +4,14 @@ import { Link, useLocation } from "react-router-dom";
 import { routes } from "../router/AppRouter";
 import { getActiveRoute } from "../helpers/utils";
 import { UserContext } from "../state/UserContext";
+import { LayoutContext } from "../state/LayoutContext";
 
 const { Sider } = Layout;
 
 type Props = {};
 
 export const AppSider: React.FC<Props> = () => {
+  const layoutContext = useContext(LayoutContext);
   const userContext = useContext(UserContext);
   const activeRoutes = getActiveRoute({ routes, userContext });
   const { pathname } = useLocation();
@@ -17,11 +19,15 @@ export const AppSider: React.FC<Props> = () => {
   return (
     <Sider
       collapsible={true}
-      defaultCollapsed={true}
+      defaultCollapsed={layoutContext.layoutSetting.sider.isSiderDefaultOpen}
       collapsedWidth={0}
-      theme="dark"
+      theme={layoutContext.layoutSetting.menuTheme}
     >
-      <Menu theme="dark" mode="inline" selectedKeys={[pathname]}>
+      <Menu
+        theme={layoutContext.layoutSetting.menuTheme}
+        mode="inline"
+        selectedKeys={[pathname]}
+      >
         {activeRoutes.map((el) => {
           return (
             <Menu.Item key={el.path} icon={el.siderIcon}>
