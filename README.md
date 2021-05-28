@@ -1,4 +1,8 @@
-TODO:
+# Opinionated Frontend starter for Ant Design, React and Typescript
+
+it uses create-react-app and react-router
+
+### TODO:
 
 - [x] Typescript
 - [x] Ant Design
