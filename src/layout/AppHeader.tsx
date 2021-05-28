@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import { UserContext } from "../state/UserContext";
 import { SettingContext } from "../state/SettingContext";
 
-const { Title } = Typography;
+const { Title, Text } = Typography;
 const { Header } = Layout;
 
 export const AppHeader: React.FC = () => {
@@ -29,7 +29,7 @@ export const AppHeader: React.FC = () => {
             </Button>
           ) : (
             <>
-              <span style={{ color: "white" }}>Welcome {userContext.user}</span>
+              <Text style={{ color: "white" }}>Welcome {userContext.user}</Text>
               <Button type="link" onClick={() => userContext.logout?.(history)}>
                 Logout
               </Button>
