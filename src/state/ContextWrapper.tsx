@@ -11,7 +11,6 @@ export const ContextWrapper: React.FC = ({ children }) => {
         <LayoutContextProvider>
           <SettingContextProvider>{children}</SettingContextProvider>
         </LayoutContextProvider>
-        ;
       </LoadingContextProvider>
     </UserContextProvider>
   );

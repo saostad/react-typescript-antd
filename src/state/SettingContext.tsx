@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 
+const defaultSetting = {
+  appTitle: "Application Title Here",
+  appDescription: "Application Description Here",
+};
+
 /** placeholder for business related settings */
 export const SettingContext = React.createContext({
-  setting: {},
-  settingSet: (value: string) => {},
+  setting: defaultSetting,
+  settingSet: (value: typeof defaultSetting) => {},
 });
 
 /** placeholder for business related settings */
 export const SettingContextProvider: React.FC = ({ children }) => {
-  const [setting, settingSet] = useState("dark");
+  const [setting, settingSet] = useState<typeof defaultSetting>(defaultSetting);
 
   const state = {
     setting,

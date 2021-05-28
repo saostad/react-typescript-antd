@@ -12,7 +12,7 @@ it uses create-react-app and react-router
   - [ ] Header
     - [ ] Company Logo
     - [x] Application Title
-    - [ ] Description
+    - [ ] Application Description
     - [x] Login Button
     - [x] Logout Button
   - [x] Footer (Copyright & Year & Version number)
@@ -23,6 +23,12 @@ it uses create-react-app and react-router
       - [x] show active routes
       - [x] highlight selected/active route
       - [ ] integration with protected routes
+  - [x] Layout Settings Context
+    - [x] toggle enable/disable sidebar
+    - [x] default sidebar open/close
+    - [x] menu theme mode
+  - [x] Loading Context
+    - [ ] loading progress bar (UI)
 - [ ] Router
   - [x] Basic Setup
   - [x] 404
@@ -35,5 +41,6 @@ it uses create-react-app and react-router
       - [ ] header
       - [ ] hamburger button left/right
 - [ ] user authentication
+  - [x] user context
   - [x] local account login
   - [ ] [Azure AD integration](https://www.npmjs.com/package/@azure/msal-react)
