@@ -3,25 +3,33 @@ TODO:
 - [x] Typescript
 - [x] Ant Design
 - [ ] Layout
+  - [ ] favicon
+  - [ ] Responsive Layout
   - [ ] Header
     - [ ] Company Logo
+    - [x] Application Title
     - [ ] Description
     - [x] Login Button
     - [x] Logout Button
   - [x] Footer (Copyright & Year & Version number)
   - [ ] Breadcrumb
+    - [ ] Integration with router
   - [ ] Side Menu
-    - [ ] integration with protected routes
-  - [ ] Responsive Layout
+    - [x] Integration with router
+      - [x] show active routes
+      - [x] highlight selected/active route
+      - [ ] integration with protected routes
 - [ ] Router
   - [x] Basic Setup
   - [x] 404
-  - [ ] Integration with side menu
-    - [x] show active routes
-    - [ ] highlight selected/active route
-  - [ ] Integration with Breadcrumb
 - [x] Error Boundaries
 - [ ] Settings Page
   - [ ] Layout Settings Tab
-- [ ] favicon
-- [ ] [Azure AD integration](https://www.npmjs.com/package/@azure/msal-react)
+    - [ ] toggle enable/disable sidebar
+    - [ ] menu location
+      - [ ] sidebar
+      - [ ] header
+      - [ ] hamburger button left/right
+- [ ] user authentication
+  - [x] local account login
+  - [ ] [Azure AD integration](https://www.npmjs.com/package/@azure/msal-react)
